@@ -1,0 +1,11 @@
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\bin\Debug\netcoreapp2.1\NotebookAppApi.deps.json
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\bin\Debug\netcoreapp2.1\NotebookAppApi.runtimeconfig.json
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\bin\Debug\netcoreapp2.1\NotebookAppApi.runtimeconfig.dev.json
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\bin\Debug\netcoreapp2.1\NotebookAppApi.dll
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.csprojAssemblyReference.cache
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.csproj.CoreCompileInputs.cache
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.RazorAssemblyInfo.cache
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.RazorAssemblyInfo.cs
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.AssemblyInfoInputs.cache
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.AssemblyInfo.cs
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.RazorTargetAssemblyInfo.cache
