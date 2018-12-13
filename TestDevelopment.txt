@@ -1,1 +1,3 @@
 https://www.qappdesign.com/using-mongodb-with-net-core-webapi/
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
