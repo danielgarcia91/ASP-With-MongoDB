@@ -1,0 +1,1 @@
+https://www.qappdesign.com/using-mongodb-with-net-core-webapi/
