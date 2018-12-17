@@ -16,7 +16,7 @@ namespace NotebookAppApi.Model
         //external Id, easier to reference: 1,2,3 or A, B, C etc.
         public string Id { get; set; }
 
-        public string body { get; set; } = string.Empty;
+        public string Body { get; set; } = string.Empty;
 
         [BsonDateTimeOptions]
         //atribute to gain control on datetime serialization

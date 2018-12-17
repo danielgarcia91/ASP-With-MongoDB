@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using NotebookAppApi.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

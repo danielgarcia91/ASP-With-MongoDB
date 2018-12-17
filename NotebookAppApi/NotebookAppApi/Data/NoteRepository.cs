@@ -9,15 +9,8 @@ using MongoDB.Driver.Linq;
 
 namespace NotebookAppApi.Data
 {
-    public class NoteRepository
+    public class NoteRepository 
     {
-        Task<IEnumerable<Note>> GetAllNotes();
-        Task<Note> GetNote(string id);
-
-        //query after multiple parameters
-        Task<IEnumerable<Note>> GetNote(string bodyText, DateTime updateFrom, long headerSizeLimit);
-
-        //add new note document
         
     }
 }
