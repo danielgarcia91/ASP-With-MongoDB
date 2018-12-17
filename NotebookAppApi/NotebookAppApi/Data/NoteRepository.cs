@@ -156,6 +156,21 @@ namespace NotebookAppApi.Data
         }
 
 
+        //Remove all notes
+        public async Task<bool> RemoveAllNotes()
+        {
+            try
+            {
+                DeleteResult actionResult = await _context.Notes.DeleteManyAsync(new BsonDocument());
+                return actionResult.IsAcknowledged && actionResult.DeletedCount > 0;
+            }
+            catch(Exception ex)
+            {
+                //log or manage the exception
+                throw ex;
+            }
+        }
+
 
         
     }
