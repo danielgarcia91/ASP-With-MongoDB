@@ -114,16 +114,20 @@ namespace NotebookAppApi.Data
         public async Task<bool> UpdateNote(string id, string body)
         {
             var filter = Builders<Note>.Filter.Eq(s => s.Id, id);
-            var update = Builders<Note>.Update.Set(s => s.Body, body).CurrentDate(s => s.UpdateOn);
+            var update = Builders<Note>.Update
+                            .Set(s => s.Body, body)
+                            .CurrentDate(s => s.UpdatedOn);
 
             try
             {
                 UpdateResult actionResult = await _context.Notes.UpdateOneAsync(filter, update);
-                return actionResult.IsAcknowledged && actionResult.ModifiedCount > 0;
+
+                return actionResult.IsAcknowledged
+                    && actionResult.ModifiedCount > 0;
             }
             catch (Exception ex)
             {
-                //log or manage the exception
+                // log or manage the exception
                 throw ex;
             }
         }
@@ -150,7 +154,7 @@ namespace NotebookAppApi.Data
         {
             var item = await GetNote(id) ?? new Note();
             item.Body = body;
-            item.UpdateOn = DateTime.Now;
+            item.UpdatedOn = DateTime.Now;
 
             return await UpdateNote(id, item);
         }

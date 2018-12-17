@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NotebookAppApi.Interfaces
 {
-    public class INoteRepository
+    public interface INoteRepository
     {
         Task<IEnumerable<Note>> GetAllNotes();
 
