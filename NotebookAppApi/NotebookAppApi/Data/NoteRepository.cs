@@ -109,6 +109,43 @@ namespace NotebookAppApi.Data
                 throw ex;
             }
         }
+
+        //upddate Note
+        public async Task<bool> UpdateNote(string id, string body)
+        {
+            var filter = Builders<Note>.Filter.Eq(s => s.Id, id);
+            var update = Builders<Note>.Update.Set(s => s.Body, body).CurrentDate(s => s.UpdateOn);
+
+            try
+            {
+                UpdateResult actionResult = await _context.Notes.UpdateOneAsync(filter, update);
+                return actionResult.IsAcknowledged && actionResult.ModifiedCount > 0;
+            }
+            catch (Exception ex)
+            {
+                //log or manage the exception
+                throw ex;
+            }
+        }
+
+        public async Task<bool> UpdateNote(string id, Note item)
+        {
+            try
+            {
+                ReplaceOneResult actionResult = await _context.Notes
+                                                .ReplaceOneAsync(n => n.Id.Equals(id)
+                                                                , item
+                                                                , new UpdateOptions { IsUpsert = true });
+                return actionResult.IsAcknowledged && actionResult.MatchedCount > 0;
+            }
+            catch (Exception ex)
+            {
+                //log or manage the exception
+                throw ex;
+            }
+        }
+
+
         
     }
 }
