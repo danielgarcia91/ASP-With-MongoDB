@@ -145,6 +145,17 @@ namespace NotebookAppApi.Data
             }
         }
 
+        //Demo function - full document update
+        public async Task<bool> UpdateNoteDocument(string id, string body)
+        {
+            var item = await GetNote(id) ?? new Note();
+            item.Body = body;
+            item.UpdateOn = DateTime.Now;
+
+            return await UpdateNote(id, item);
+        }
+
+
 
         
     }
