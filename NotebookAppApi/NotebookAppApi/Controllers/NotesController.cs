@@ -45,5 +45,26 @@ namespace NotebookAppApi.Controllers
         {
             return await _noteRepository.GetNote(bodyText, updatedFrom, headerSizeLimit) ?? new List<Note>();
         }
+
+        //POST api/notes
+        [HttpPost]
+        public void Post([FromBody] NoteParam newNote)
+        {
+            _noteRepository.AddNote(new Note
+            {
+                Id = newNote.Id,
+                Body = newNote.Body,
+                UpdatedOn = DateTime.Now,
+                UserId = newNote.UserId
+
+            });
+        }
+
+        //PUT api/note/5
+        [HttpPut ("{id}")]
+        public void Put(string id, [FromBody]string value)
+        {
+            _noteRepository.UpdateNoteDocument(id, value);
+        }
     }
 }
