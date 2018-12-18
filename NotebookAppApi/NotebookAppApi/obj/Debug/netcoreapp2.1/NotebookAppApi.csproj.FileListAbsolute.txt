@@ -11,3 +11,4 @@ C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debu
 C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.RazorTargetAssemblyInfo.cache
 C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.dll
 C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.pdb
+C:\Users\Alex Navarro\Documents\ASP Mongo\NotebookAppApi\NotebookAppApi\obj\Debug\netcoreapp2.1\NotebookAppApi.csprojAssemblyReference.cache
