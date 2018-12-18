@@ -66,5 +66,12 @@ namespace NotebookAppApi.Controllers
         {
             _noteRepository.UpdateNoteDocument(id, value);
         }
+
+        //DELETE api/notes/23243423
+        [HttpDelete ("{id}")]
+        public void Delete(string id)
+        {
+            _noteRepository.RemoveNote(id);
+        }
     }
 }
