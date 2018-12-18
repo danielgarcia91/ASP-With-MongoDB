@@ -35,6 +35,15 @@ namespace NotebookAppApi.Controllers
             return await _noteRepository.GetNote(id) ?? new Note();
         }
 
-
+        //GET api/notes/text/date/size
+        // example: http://localhost:53617/api/notes/Test/2018-01-01/10000
+        [NoCache]
+        [HttpGet(template: "{bodyText}/{updateFrom}/{headerSizeLimit}")]
+        public async Task<IEnumerable<Note>> Get (string bodyText,
+                                                  DateTime updatedFrom,
+                                                  long headerSizeLimit)
+        {
+            return await _noteRepository.GetNote(bodyText, updatedFrom, headerSizeLimit) ?? new List<Note>();
+        }
     }
 }
